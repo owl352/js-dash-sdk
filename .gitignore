@@ -1,0 +1,9 @@
+build
+dist
+
+
+
+# Project exclude paths
+/src/SDK/Client/Client.d.ts
+/src/SDK/Core/Core.d.ts
+/src/SDK/Platform/Platform.d.ts
