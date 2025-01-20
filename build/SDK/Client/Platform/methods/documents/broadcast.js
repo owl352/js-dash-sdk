@@ -36,7 +36,7 @@ async function broadcast(documents, identity) {
         .bumpIdentityContractNonce(identityId, dataContractId);
     const documentsBatchTransition = dpp.document.createStateTransition(documents, {
         [identityId.toString()]: {
-            [dataContractId.toString()]: identityContractNonce,
+            [dataContractId.toString()]: identityContractNonce.toString(),
         },
     });
     this.logger.silly('[Document#broadcast] Created documents batch transition');
