@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createFakeInstantLock = void 0;
-var dashcore_lib_1 = require("@dashevo/dashcore-lib");
+const dashcore_lib_1 = require("@dashevo/dashcore-lib");
 function createFakeInstantLock(transactionHash) {
     return new dashcore_lib_1.InstantLock({
         version: 1,

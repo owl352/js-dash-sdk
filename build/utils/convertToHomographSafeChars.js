@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @return {string}
  */
 function convertToHomographSafeChars(input) {
-    return input.toLowerCase().replace(/[oli]/g, function (match) {
+    return input.toLowerCase().replace(/[oli]/g, (match) => {
         if (match === 'o') {
             return '0';
         }

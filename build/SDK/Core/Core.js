@@ -20,6 +20,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Core = void 0;
-var Core = __importStar(require("@dashevo/dashcore-lib"));
+const Core = __importStar(require("@dashevo/dashcore-lib"));
 exports.Core = Core;
 //# sourceMappingURL=Core.js.map

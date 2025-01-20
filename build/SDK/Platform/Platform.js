@@ -22,8 +22,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = exports.Platform = void 0;
 // TODO remove default exports
 // eslint-disable-next-line no-restricted-exports
-var _DashPlatformProtocol = __importStar(require("@dashevo/wasm-dpp"));
-var Platform_1 = require("../Client/Platform/Platform");
+const _DashPlatformProtocol = __importStar(require("@dashevo/wasm-dpp"));
+const Platform_1 = require("../Client/Platform/Platform");
 var Platform;
 (function (Platform) {
     Platform.DashPlatformProtocol = _DashPlatformProtocol;

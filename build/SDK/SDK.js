@@ -6,12 +6,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = exports.SDK = void 0;
 /* eslint-disable no-restricted-exports */
 // TODO remove default export
-var dapi_client_1 = __importDefault(require("@dashevo/dapi-client"));
-var wallet_lib_1 = require("@dashevo/wallet-lib");
-var Client_1 = require("./Client");
-var Core_1 = require("./Core");
-var Platform_1 = require("./Platform");
-var StateTransitionBroadcastError_1 = require("../errors/StateTransitionBroadcastError");
+const dapi_client_1 = __importDefault(require("@dashevo/dapi-client"));
+const wallet_lib_1 = require("@dashevo/wallet-lib");
+const Client_1 = require("./Client");
+const Core_1 = require("./Core");
+const Platform_1 = require("./Platform");
+const StateTransitionBroadcastError_1 = require("../errors/StateTransitionBroadcastError");
 var SDK;
 (function (SDK) {
     SDK.DAPIClient = dapi_client_1.default;
@@ -31,7 +31,7 @@ var SDK;
     };
     SDK.PlatformProtocol = SDK.Platform.DashPlatformProtocol;
     SDK.Essentials = {
-        Buffer: Buffer,
+        Buffer,
     };
     SDK.Errors = {
         StateTransitionBroadcastError: StateTransitionBroadcastError_1.StateTransitionBroadcastError,
