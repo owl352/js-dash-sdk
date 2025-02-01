@@ -27,12 +27,7 @@ async function get(id) {
     let metadata;
     const responseMetadata = identityResponse.getMetadata();
     if (responseMetadata) {
-        metadata = new wasm_dpp_1.Metadata({
-            blockHeight: responseMetadata.getHeight(),
-            coreChainLockedHeight: responseMetadata.getCoreChainLockedHeight(),
-            timeMs: responseMetadata.getTimeMs(),
-            protocolVersion: responseMetadata.getProtocolVersion(),
-        });
+        metadata = new wasm_dpp_1.Metadata(responseMetadata.getHeight(), responseMetadata.getCoreChainLockedHeight(), responseMetadata.getTimeMs(), responseMetadata.getProtocolVersion());
     }
     identity.setMetadata(metadata);
     return identity;

@@ -64,12 +64,12 @@ declare class Fetcher {
     fetchDataContract(id: Identifier): Promise<GetDataContractResponse>;
     /**
      * Fetches data contract by it's ID
-     * @param id
-     * @param startAMs
-     * @param limit
-     * @param offset
+     * @param id {Identifier}
+     * @param startAMs {bigint}
+     * @param limit {number}
+     * @param offset {number}
      */
-    fetchDataContractHistory(id: Identifier, startAMs: number, limit: number, offset: number): Promise<GetDataContractHistoryResponse>;
+    fetchDataContractHistory(id: Identifier, startAMs: bigint, limit: number, offset: number): Promise<GetDataContractHistoryResponse>;
     /**
      * Fetches documents by data contract id and type
      * @param {Identifier} contractId - data contract ID

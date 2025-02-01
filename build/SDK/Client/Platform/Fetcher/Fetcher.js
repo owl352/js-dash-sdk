@@ -91,10 +91,10 @@ class Fetcher {
     }
     /**
      * Fetches data contract by it's ID
-     * @param id
-     * @param startAMs
-     * @param limit
-     * @param offset
+     * @param id {Identifier}
+     * @param startAMs {bigint}
+     * @param limit {number}
+     * @param offset {number}
      */
     async fetchDataContractHistory(id, startAMs, limit, offset) {
         // Define query

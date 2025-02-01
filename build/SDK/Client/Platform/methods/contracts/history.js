@@ -1,16 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.history = void 0;
-// @ts-ignore
 const wasm_dpp_1 = require("@dashevo/wasm-dpp");
 const NotFoundError = require('@dashevo/dapi-client/lib/transport/GrpcTransport/errors/NotFoundError');
 /**
  * Get contracts from the platform
  *
  * @param {ContractIdentifier} identifier - identifier of the contract to fetch
- * @param startAtMs
- * @param limit
- * @param offset
+ * @param {bigint} startAtMs
+ * @param {number} limit
+ * @param {number} offset
  * @returns contracts
  */
 async function history(identifier, startAtMs, limit, offset) {

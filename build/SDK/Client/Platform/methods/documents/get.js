@@ -116,12 +116,7 @@ async function get(typeLocator, opts) {
         let metadata;
         const responseMetadata = documentsResponse.getMetadata();
         if (responseMetadata) {
-            metadata = new wasm_dpp_1.Metadata({
-                blockHeight: responseMetadata.getHeight(),
-                coreChainLockedHeight: responseMetadata.getCoreChainLockedHeight(),
-                timeMs: responseMetadata.getTimeMs(),
-                protocolVersion: responseMetadata.getProtocolVersion(),
-            });
+            metadata = new wasm_dpp_1.Metadata(responseMetadata.getHeight(), responseMetadata.getCoreChainLockedHeight(), responseMetadata.getTimeMs(), responseMetadata.getProtocolVersion());
         }
         document.setMetadata(metadata);
         return document;
