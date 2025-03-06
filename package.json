@@ -46,7 +46,7 @@
     "@dashevo/dpns-contract": "1.8.0",
     "@dashevo/grpc-common": "1.8.0",
     "@dashevo/masternode-reward-shares-contract": "1.8.0",
-    "@dashevo/wallet-lib": "1.8.0",
+    "@dashevo/wallet-lib": "8.8.0",
     "@dashevo/wasm-dpp": "1.8.0",
     "@dashevo/withdrawals-contract": "1.8.0",
     "bs58": "^4.0.1",
