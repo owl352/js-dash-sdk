@@ -109,5 +109,6 @@
     "util": "^0.12.4",
     "webpack": "^5.94.0",
     "webpack-cli": "^4.9.1"
-  }
+  },
+  "packageManager": "yarn@4.2.2+sha224.1e50daf19e5e249a025569752c60b88005fddf57d10fcde5fc68b88f"
 }
