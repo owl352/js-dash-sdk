@@ -19,8 +19,7 @@
     "test:unit": "ts-mocha -p tsconfig.mocha.json src/**/*.spec.ts",
     "test:functional": "yarn run build:ts && LOAD_ENV=true mocha --recursive tests/functional/**/*.js",
     "test:types": "yarn pnpify tsd",
-    "prepublishOnly": "yarn run build",
-    "prepare": "yarn run build"
+    "prepublishOnly": "yarn run build"
   },
   "ultra": {
     "concurrent": [
